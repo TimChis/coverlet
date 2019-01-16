@@ -282,7 +282,11 @@ Supported Formats:
 * cobertura
 * teamcity
 
-You can specify multiple output formats by separating them with a comma (`,`).
+You can specify multiple output formats by separating them with a comma (`,`). 
+
+```bash
+dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=\"opencover,teamcity\"
+```
 
 The output of the coverage result can be specified using the `CoverletOutput` property.
 
